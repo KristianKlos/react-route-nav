@@ -1,5 +1,5 @@
-import React, { Fragment, useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, useHistory, useParams, useLocation, Redirect } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 
 
@@ -26,16 +26,16 @@ const Header = () => {
     return(
         <ul className="nav nav-pills nav-fill bg-dark text-white">
             <li className="nav-item">
-                <Link className="nav-link" to={Welcome} >Welcome</Link>
+                <Link className="nav-link" to="/">Welcome</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to={Home} >Home</Link>
+                <Link className="nav-link" to="/home">Home</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to={Person}>Person</Link>
+                <Link className="nav-link" to="/person">Person</Link>
             </li>
             <li className="nav-item">
-                <Link className="nav-link" to={About} >About</Link>
+                <Link className="nav-link" to="/about">About</Link>
             </li>
         </ul>
     )
