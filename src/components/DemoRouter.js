@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-
+import Crud from './CrudDemo';
 
 
 const DemoRouter = () => {
@@ -11,6 +11,7 @@ const DemoRouter = () => {
                 <Switch>
                     <Route exact path="/" component={Welcome} />
                     <Route path="/home" component={Home}  />
+                    <Route path="/crud" component={Crud} />
                     <Route path="/person" component={Person}  />
                     <Route path="/about" component={About}  />
 
@@ -30,6 +31,9 @@ const Header = () => {
             </li>
             <li className="nav-item">
                 <Link className="nav-link" to="/home">Home</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/crud">CrudDemo</Link>
             </li>
             <li className="nav-item">
                 <Link className="nav-link" to="/person">Person</Link>
